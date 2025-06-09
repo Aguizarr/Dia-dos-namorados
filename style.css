@@ -138,22 +138,24 @@ body {
   }
   
   .foto-conquista .legenda {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 8px 12px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 16px;
-    text-align: center;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    box-sizing: border-box;
-  }
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 8px 12px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 16px;
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  box-sizing: border-box;
+  z-index: 5; /* para ficar atrás do coração */
+}
+
   
   .foto-conquista img {
     width: 250px;
