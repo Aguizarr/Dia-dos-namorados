@@ -18,12 +18,6 @@ function validarLogin() {
         <h1>💖 Bem-vinda, meu amor! 💖</h1>
         <p>Eu preparei isso com muito carinho. Passe o mouse nas fotos meu amor!</p>
         
-        <!-- Áudio romântico -->
-      <audio id="musica" autoplay loop>
-        <source src="musica.mp3" type="audio/mpeg">
-        Seu navegador não suporta áudio.
-      </audio>
-        
         <div class="galeria">
           <div class="foto-conquista">
             <img src="foto1.jpg" alt="Foto 1">
@@ -58,13 +52,6 @@ function validarLogin() {
         </div>
       </div>
     `;
-      
-      const audio = document.getElementById('musicaladygaga');
-      if (audio) {
-        audio.play().catch((e) => {
-          console.log("Autoplay bloqueado. A interação do usuário será necessária.");
-    });
-  }
   
   }
   
