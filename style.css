@@ -125,4 +125,40 @@ body {
 .foto img {
   height: auto;
 }
+
+.foto-conquista {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+.foto-conquista img {
+  width: 250px;
+  border-radius: 15px;
+}
+.foto-conquista .legenda {
+  position: absolute;
+  bottom: 10px; left: 10px;
+  background: rgba(233,30,99,0.8);
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  padding: 8px 12px;
+  border-radius: 10px;
+  opacity: 0; transition: opacity 0.3s;
+}
+.foto-conquista:hover .legenda {
+  opacity: 1;
+}
+.coracao-animado {
+  position: absolute;
+  top: -10px; right: -10px;
+  width: 30px; height: 30px;
+  background: url('assets/coracao.svg') no-repeat center/contain;
+  animation: balancar 1.5s infinite;
+}
+@keyframes balancar {
+  0% {transform: rotate(0deg) scale(1);}
+  50% {transform: rotate(10deg) scale(1.2);}
+  100% {transform: rotate(0deg) scale(1);}
+}
+
   
