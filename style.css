@@ -10,11 +10,11 @@ body {
   
   .container {
     background: white;
-    padding: 100px;
-    border-radius: 30px;
+    padding: 30px;
+    border-radius: 15px;
     box-shadow: 0 0 10px #ff69b4;
     text-align: center;
-    max-width: 500px;
+    max-width: 400px;
   }
   
   h1, h2 {
