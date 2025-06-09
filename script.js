@@ -1,25 +1,29 @@
 let tentativas = 0;
-function validarLogin() {
-    const nome = document.getElementById('nome').value.toLowerCase().trim();
-    const senha = document.getElementById('senha').value;
-      
-   const erroEl = document.getElementById('erro');
-    
-    if (nome === "bruna" && senha === "teamo1112") {
-      mostrarMensagem();
-    } else {
-      tentativas++;
-      let mensagem = "Nome ou senha incorretos 😢";
-      
-      // Exibe dica após a segunda tentativa
-      if (tentativas >= 2) {
-        mensagem += "\n💡 Dica: É uma palavra que nunca pode faltar no Boa noite + data do inicio do nosso namoro(fizemos 6 meses agr hehekk) - (Ex: palavramisteriosaXXXX).";
-      }
-        erroEl.innerText = mensagem;
 
-    return false; // impede o envio do formulário
+function validarLogin() {
+  const nome = document.getElementById('nome').value.toLowerCase().trim();
+  const senha = document.getElementById('senha').value;
+
+  const erroEl = document.getElementById('erro');
+
+  if (nome === "bruna" && senha === "teamo1112") {
+    mostrarMensagem();
+  } else {
+    tentativas++;
+    let mensagem = "Nome ou senha incorretos 😢";
+
+    // Exibe dica após a segunda tentativa
+    if (tentativas >= 2) {
+      mensagem += "\n💡 Dica: É uma palavra que nunca pode faltar no 'Boa noite' + data do início do nosso namoro (fizemos 6 meses agr hehekk) — (Ex: palavramisteriosaXXXX).";
+    }
+
+    erroEl.innerText = mensagem;
+    return false; // ✅ Agora está dentro do `else`
   }
-  
+
+  return false; // Também pode estar aqui fora se você quiser impedir envio em qualquer caso
+}
+
   function mostrarMensagem() {
     document.body.innerHTML = `
       <link rel="stylesheet" href="style.css">
