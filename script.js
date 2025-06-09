@@ -1,15 +1,18 @@
+let tentativas = 0;
 function validarLogin() {
     const nome = document.getElementById('nome').value.toLowerCase().trim();
     const senha = document.getElementById('senha').value;
-      let tentativas = 0;
-    // Coloque o nome exato que sua namorada deve digitar, exemplo "Bruna"
+      
+   const erroEl = document.getElementById('erro');
+    
     if (nome === "bruna" && senha === "teamo1112") {
       mostrarMensagem();
     } else {
       tentativas++;
       let mensagem = "Nome ou senha incorretos 😢";
-    }
-     if (tentativas >= 2) {
+      
+      // Exibe dica após a segunda tentativa
+      if (tentativas >= 2) {
         mensagem += "\n💡 Dica: É uma palavra que nunca pode faltar no Boa noite + data do inicio do nosso namoro(fizemos 6 meses agr hehekk) - (Ex: palavramisteriosaXXXX).";
       }
     return false; // impede o envio do formulário
