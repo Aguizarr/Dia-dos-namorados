@@ -17,12 +17,10 @@ body {
     max-width: 500px;
   }
   
-  h1 {
+  h1, h2 {
     color: #e91e63;
   }
-    h2 {
-        color: #e91e63;
-    }
+
 
   input {
     display: block;
