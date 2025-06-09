@@ -13,7 +13,7 @@ let tentativas = 0;
       tentativas++;
       let mensagem = "Nome ou senha incorretos 😢";
 
-      if (tentativas >= 2) {
+      if (tentativas >= 1) {
         mensagem += "\n💡 Dica: É uma palavra que nunca pode faltar no 'Boa noite' + data do início do nosso namoro (fizemos 6 meses agr hehekk) — (Ex: palavramisteriosaXXXX).";
       }
 
