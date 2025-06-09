@@ -1,7 +1,6 @@
-let tentativas = 0;
 
-  function validarLogin(event) {
-    event.preventDefault(); // ⛔ impede o envio do formulário
+ function validarLogin(event) {
+    event.preventDefault(); // Impede o envio do formulário
 
     const nome = document.getElementById('nome').value.toLowerCase().trim();
     const senha = document.getElementById('senha').value;
@@ -10,13 +9,9 @@ let tentativas = 0;
     if (nome === "bruna" && senha === "teamo1112") {
       mostrarMensagem();
     } else {
-      tentativas++;
-      let mensagem = "Nome ou senha incorretos 😢";
-
-      if (tentativas >= 1) {
-        mensagem += "\n💡 Dica: É uma palavra que nunca pode faltar no 'Boa noite' + data do início do nosso namoro (fizemos 6 meses agr hehekk) — (Ex: palavramisteriosaXXXX).";
-      }
-
+      const mensagem = 
+        "Nome ou senha incorretos 😢\n💡 Dica: É uma palavra que nunca pode faltar no 'Boa noite' + data do início do nosso namoro (fizemos 6 meses agr hehekk) — (Ex: palavramisteriosaXXXX).";
+      
       erroEl.innerText = mensagem;
     }
   }
