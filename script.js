@@ -21,8 +21,7 @@ function mostrarMensagem() {
       <div class="container">
         <h1>💖 Bem-vinda, meu amor! 💖</h1>
         <p>Eu preparei isso com muito carinho. Passe o mouse nas fotos meu amor!</p>
-        
-        <div class="galeria">
+          <div class="galeria">
           <div class="foto-conquista">
             <img src="foto1.jpg" alt="Foto 1">
             <div class="legenda">Essas fotos são poucas comparado ao meu sentimento por você vida😍</div>
@@ -57,5 +56,5 @@ function mostrarMensagem() {
       </div>
     `;
 }
-  }
+  
   
