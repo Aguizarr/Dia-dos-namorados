@@ -1,20 +1,16 @@
+function validarLogin(event) {
+  event.preventDefault(); // impede o envio do formulário e o recarregamento da página
 
- function validarLogin(event) {
-    event.preventDefault(); // Impede o envio do formulário
+  const nome = document.getElementById('nome').value.toLowerCase().trim();
+  const senha = document.getElementById('senha').value;
+  const erroEl = document.getElementById('erro');
 
-    const nome = document.getElementById('nome').value.toLowerCase().trim();
-    const senha = document.getElementById('senha').value;
-    const erroEl = document.getElementById('erro');
-
-    if (nome === "bruna" && senha === "teamo1112") {
-      mostrarMensagem();
-    } else {
-      const mensagem = 
-        "\n💡 Dica: É uma palavra que nunca pode faltar no 'Boa noite' + data do início do nosso namoro (fizemos 6 meses agr hehekk) — (Ex: palavramisteriosaXXXX).💡";
-      
-      erroEl.innerText = mensagem;
-    }
+  if (nome === "bruna" && senha === "teamo1112") {
+    mostrarMensagem();
+  } else {
+    erroEl.innerText = "Nome ou senha incorretos 😢\n💡 Dica: É uma palavra que nunca pode faltar no 'Boa noite' + data do nosso início (fizemos 6 meses agr hehekk) — (Ex: palavramisteriosaXXXX)";
   }
+}
   function mostrarMensagem() {
     document.body.innerHTML = `
       <link rel="stylesheet" href="style.css">
