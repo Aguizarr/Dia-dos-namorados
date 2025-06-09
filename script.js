@@ -1,7 +1,7 @@
 function validarLogin() {
     const nome = document.getElementById('nome').value.toLowerCase().trim();
     const senha = document.getElementById('senha').value;
-  
+      let tentativas = 0;
     // Coloque o nome exato que sua namorada deve digitar, exemplo "Bruna"
     if (nome === "bruna" && senha === "teamo1112") {
       mostrarMensagem();
