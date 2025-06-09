@@ -11,7 +11,7 @@ function validarLogin(event) {
     erroEl.innerText = "Nome ou senha incorretos 😢\n💡 Dica: É uma palavra que nunca pode faltar no 'Boa noite' + data do nosso início (fizemos 6 meses agr hehekk) — (Ex: palavramisteriosaXXXX)";
   }
 }
-  function mostrarMensagem() {
+function mostrarMensagem() {
     document.body.innerHTML = `
       <link rel="stylesheet" href="style.css">
       <div class="container">
