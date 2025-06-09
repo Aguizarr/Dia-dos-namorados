@@ -13,7 +13,7 @@ function validarLogin() {
   
   function mostrarMensagem() {
     document.getElementById('conteudo').innerHTML = `
-      <div class="container">
+      <div id="conteudo" class="container">
         <h1>💖 Bem-vinda, meu amor! 💖</h1>
         <p>Eu preparei isso com muito carinho. Passe o mouse nas fotos meu amor!</p>
         <div class="galeria">
