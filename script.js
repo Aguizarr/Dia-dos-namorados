@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("form-login");
-  form.addEventListener("submit", validarLogin);
-});
 
 function validarLogin(event) {
   event.preventDefault(); // impede o envio do formulário e o recarregamento da página
