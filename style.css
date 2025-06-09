@@ -56,7 +56,12 @@ body {
     gap: 20px;
     margin-top: 30px;
   }
-  
+.galeria img {
+  width: 80%;               /* Diminui o tamanho da imagem */
+  margin-bottom: 20px;      /* Espaço entre as imagens */
+  border-radius: 15px;      /* Se quiser cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
   .foto {
     position: relative;
     width: 200px;
