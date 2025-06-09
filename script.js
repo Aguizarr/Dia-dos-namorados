@@ -41,7 +41,7 @@ function validarLogin() {
           </div>
           <div class="foto-conquista">
             <img src="foto5.jpg" alt="Foto 5">
-            <div class="legenda"> Sua chatisse me estressa, mas não vivo sem hehe ❤️</div>
+            <div class="legenda"> Sua chatisse me estressa, mas eu não vivo sem hehe ❤️</div>
             <div class="coracao-animado">❤️</div>
           </div>
           <div class="foto-conquista">
