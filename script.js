@@ -8,6 +8,9 @@ function validarLogin() {
     } else {
       document.getElementById('erro').innerText = "Nome ou senha incorretos 😢";
     }
+     if (tentativas >= 2) {
+        mensagem += "\n💡 Dica: É uma palavra que nunca pode faltar no Boa noite + data do inicio do nosso namoro(fizemos 6 meses agr hehekk) - (Ex: palavramisteriosaXXXX).";
+      }
     return false; // impede o envio do formulário
   }
   
