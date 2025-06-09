@@ -75,24 +75,27 @@ body {
     object-fit: cover;
   }
   
-  .legenda {
-    position: absolute;
-    bottom: 0;
-    background: rgba(233, 30, 99, 0.8);
-    color: white;
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    font-family: 'Dancing Script', cursive;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.4s;
-  }
-  
-  
-  .foto:hover .legenda {
-    opacity: 1;
-  }
+ .legenda {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(233, 30, 99, 0.8);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  text-align: center;
+}
+
+.foto:hover .legenda,
+.foto-conquista:hover .legenda {
+  opacity: 1;
+}
+
 /* Ajusta a largura e padding no celular */
 .container {
   width: 90%;
