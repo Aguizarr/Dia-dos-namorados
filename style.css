@@ -77,19 +77,19 @@ body {
   
  .legenda {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 10px 15px;
-  border-radius: 10px;
+  padding: 8px 12px;
   font-family: 'Dancing Script', cursive;
-  font-size: 18px;
-  opacity: 0;
-  transition: opacity 0.4s;
+  font-size: 16px;
   text-align: center;
-  width: 80%;         /* ajuda no texto quebrar certinho no mobile */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
   box-sizing: border-box;
 }
 
@@ -144,7 +144,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.foto, .foto-conquista {
+.foto-conquista {
   position: absolute;
   bottom: 10px;
   left: 10px;
