@@ -6,7 +6,7 @@ window.validarLogin = function () {
   if (nome === "bruna" && senha === "teamo1112") {
     mostrarMensagem();
   } else {
-    document.getElementById('erro').innerText = "Nome ou senha incorretos 😢";
+    document.getElementById('erro').innerText = "Nome ou senha incorretos 😢"\n"DICA: Essa palavra não pode faltar no nosso BOA NOITE + Dia e Mês do inicio do namoro (fizemos 6 meses esse mês em)."\n"(EX: palavrasecretaXXXX)" ;
   }
 
   return false; // impede o envio do formulário
