@@ -80,7 +80,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(233, 30, 99, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 10px 15px;
   border-radius: 10px;
@@ -89,6 +89,8 @@ body {
   opacity: 0;
   transition: opacity 0.4s;
   text-align: center;
+  width: 80%;         /* ajuda no texto quebrar certinho no mobile */
+  box-sizing: border-box;
 }
 
 .foto:hover .legenda,
@@ -142,7 +144,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.foto-conquista .legenda {
+.foto, .foto-conquista {
   position: absolute;
   bottom: 10px;
   left: 10px;
