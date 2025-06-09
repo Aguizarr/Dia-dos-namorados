@@ -113,13 +113,12 @@ body {
     align-items: center;
   }
   
-  @media (min-width: 600px) {
-    .galeria {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+ @media screen and (max-width: 600px) {
+  .foto-conquista img {
+    width: 100%;
+    max-width: 90vw;
   }
+}
   
   /* Ajusta as imagens para telas menores */
   .foto {
