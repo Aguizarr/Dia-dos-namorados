@@ -14,6 +14,7 @@ window.validarLogin = function () {
 
 // Define a função para mostrar a galeria
 window.mostrarMensagem = function () {
+  console.log("Função mostrarMensagem() foi chamada");
   document.getElementById('conteudo').innerHTML = `
     <h1>💖 Bem-vinda, meu amor! 💖</h1>
     <p>Eu preparei isso com muito carinho. Passe o mouse nas fotos meu amor!</p>
