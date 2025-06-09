@@ -1,4 +1,4 @@
-function validarLogin() {Add commentMore actions
+function validarLogin() {
     const nome = document.getElementById('nome').value.toLowerCase().trim();
     const senha = document.getElementById('senha').value;
   
