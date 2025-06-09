@@ -50,5 +50,9 @@ function validarLogin() {
         </div>
       </div>
     `;
-  
+  function validarLogin() {
+  alert('Validar login chamado!');
+  return false; // para impedir o envio do form
+}
+
   }
