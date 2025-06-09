@@ -20,7 +20,10 @@ body {
   h1 {
     color: #e91e63;
   }
-  
+  h2 {
+    color: #e91e63;
+  }
+
   input {
     display: block;
     width: 90%;
