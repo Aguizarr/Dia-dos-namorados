@@ -13,7 +13,7 @@ function validarLogin() {
     let mensagem = "Nome ou senha incorretos 😢";
 
     // Exibe dica após a segunda tentativa
-    if (tentativas >= 2) {
+    if (tentativas >= 4) {
       mensagem += "\n💡 Dica: É uma palavra que nunca pode faltar no 'Boa noite' + data do início do nosso namoro (fizemos 6 meses agr hehekk) — (Ex: palavramisteriosaXXXX).";
     }
 
