@@ -115,8 +115,9 @@ body {
   
  @media screen and (max-width: 600px) {
   .foto-conquista img {
-    width: 100%;
-    max-width: 90vw;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 }
   
@@ -134,14 +135,15 @@ body {
   /* ADICIONADO position: relative para o container do coração */
   .foto-conquista {
     position: relative;
+    display: inline-block;
   }
   
-  .foto-conquista, .legenda {
-  position: absolute;
+  .legenda {
+ position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 8px 12px;
   font-family: 'Dancing Script', cursive;
@@ -152,7 +154,7 @@ body {
   opacity: 0;
   transition: opacity 0.4s ease;
   box-sizing: border-box;
-  z-index: 5; /* para ficar atrás do coração */
+  z-index: 5;
 }
 
   
@@ -169,10 +171,12 @@ body {
   
   /* CORAÇÃO ANIMADO com z-index para ficar acima da imagem */
  .coracao-animado {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   font-size: 2rem;
   animation: pulsar 1s infinite;
-  text-align: center;
-  margin-top: 10px;
+  z-index: 10;
 }
 
 @keyframes pulsar {
