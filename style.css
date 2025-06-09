@@ -109,15 +109,21 @@ body {
   
   /* Torna a galeria responsiva */
   .galeria {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
   }
   
  @media screen and (max-width: 600px) {
   .foto-conquista img {
-    width: 250px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
   }
 }
   
@@ -135,7 +141,12 @@ body {
   /* ADICIONADO position: relative para o container do coração */
   .foto-conquista {
     position: relative;
-    display: inline-block;
+  flex: 1 1 45%;
+  max-width: 45%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #e91e63;
+  transition: transform 0.3s;
   }
   
   .legenda {
@@ -143,26 +154,24 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
   color: white;
   padding: 8px 12px;
   font-family: 'Dancing Script', cursive;
   font-size: 16px;
   text-align: center;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
   opacity: 0;
   transition: opacity 0.4s ease;
-  box-sizing: border-box;
-  z-index: 5;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
   
   .foto-conquista img {
-    width: 250px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+     width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
   }
   
   .foto-conquista:hover .legenda {
