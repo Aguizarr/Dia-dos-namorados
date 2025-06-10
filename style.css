@@ -74,23 +74,25 @@ button:hover {
   position: relative;
   width: 90%;
   max-width: 400px;
+  height: 300px; /* Altura fixa para padronizar */
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 0 15px #e91e63;
   transition: transform 0.3s ease;
 }
 
+.foto-conquista img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .foto-conquista:hover {
   transform: scale(1.03);
 }
 
-/* Imagens em si */
-.foto-conquista img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 20px;
-}
+
 
 /* Legenda que aparece ao passar o mouse */
 .legenda {
