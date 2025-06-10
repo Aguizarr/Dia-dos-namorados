@@ -48,7 +48,7 @@ button {
 .foto-conquista {
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 480px; /* aumentei a altura */
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(255, 0, 102, 0.4);
